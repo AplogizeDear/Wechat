@@ -1,0 +1,167 @@
+/*新的详情页面schedule_detail start*/
+.n_sc_top{
+    position: relative;
+    width:750rpx;
+    height:506rpx;
+    background:#fff;
+}
+.n_sc_top .blur_img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 506rpx;
+    filter: blur(40px);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 20%, rgb(255, 255, 255));
+}
+.n_sc_thump{
+    position: absolute;
+    width:258rpx;
+    height:355rpx;
+    left:247rpx;
+    top:70rpx;
+    border-radius: 10rpx;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+}
+.n_sc_thump image{
+   display:block;
+    width:100%;
+    height:100%;
+    border-radius: 10rpx;
+}
+.n_sc_sc {
+    width: 100%;
+}
+.n_sc_sc .n_sc_sc_all {
+    margin: 0 25rpx;
+    padding-top: 54rpx;
+    padding-bottom: 50rpx;
+}
+.n_sc_sc_all .n_sc_title {
+    padding-bottom: 50rpx;
+    font-size: 44rpx;
+    font-weight: 700;
+}
+.n_sc_time, .n_sc_address {
+    height: 32rpx;
+    line-height: 32rpx;
+    margin-bottom: 35rpx;
+    overflow: hidden;
+    font-size:26rpx;
+}
+.n_sc_price text {
+    font-size: 50rpx;
+    color: #ed3269;
+    font-weight: 700;
+}
+.n_sc_detail {
+    width: 100%;
+    margin-bottom: 80rpx;
+    overflow: hidden;
+}
+.sc_de {
+    margin: 0 25rpx;
+    font-size: 30rpx;
+    color: #7b8292;
+}
+.ac_detail_title{
+  overflow: hidden;
+  padding-bottom: 30rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  display: block;
+}
+.sc_de_text{
+    font-size: 28rpx;
+    color: #353b48;
+    line-height: 45rpx;
+    margin-bottom: 0;
+}
+.n_go_buy {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 160rpx;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.n_go_buy_href {
+    width: 654rpx;
+    height: 100rpx;
+    background: -webkit-linear-gradient(30deg, #ed3367, #f05e3f);
+    box-shadow: 0 7px 14px rgba(0,0,0,0.2);
+    border-radius: 50rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+
+/* 弹出层 使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  height: 874rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+}
+.pop_all_con{
+   height: auto;
+    width: 100%;
+    padding: 0 50rpx;
+    padding-top: 52rpx;
+    padding-bottom: 200rpx;
+}
+.n_pay_title{
+  margin-bottom:28rpx;
+}
+.field-select{
+  overflow: hidden;
+}
+.field-select text {
+    text-align: center;
+    display: block;
+    float: left;
+    padding: 0 26rpx;
+    height: 64rpx;
+    line-height: 64rpx;
+    border-radius: 60rpx;
+    background: #f7f8fa;
+    color: #9da3af;
+    font-size: 28rpx;
+    margin-right: 25rpx;
+    margin-bottom: 20rpx;
+}
+
+
+/* 解决滑动穿透问题，然而并没有完全解决 */
+.noscroll{
+   top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 0;
+}

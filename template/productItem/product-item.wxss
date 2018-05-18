@@ -1,0 +1,51 @@
+.goods-list{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  margin-bottom:20rpx; 
+}
+.goods-list-left{
+  width:242rpx;
+  height:320rpx;
+  float: left;
+  border-radius: 20rpx;
+}
+.goods-list-left image{
+  width:100%;
+  height:100%;
+  border-radius: 20rpx;
+  display: block;
+}
+.goods-list-right {
+    padding-top: 20rpx;
+    padding-bottom: 10rpx;
+    margin-left: 36rpx;
+    width: 386rpx;
+    height: auto;
+    float: left;
+}
+.goods-title{
+    font-size: 34rpx;
+    color: #000;
+    font-weight: bold;
+}
+.goods-time{
+  margin-top:24rpx;
+  font-size:28rpx;
+  color: #99a5b8;
+}
+.goods-address{
+  font-size:28rpx;
+  color: #99a5b8;
+  margin-bottom:24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.goods-price{
+    color: #ed3269;
+    font-size: 38rpx;
+    font-family: d-din;
+    font-weight: 700;
+    padding-top: 0.2rem;
+}

@@ -1,0 +1,13 @@
+<template name="productItem">
+      <view class="goods-list">
+            <view class="goods-list-left">
+              <image src="{{avatar}}"></image>
+            </view>
+            <view class="goods-list-right">
+                <view class="goods-title">{{title}}</view>
+                <view class="goods-time">{{time}}</view>
+                <view class="goods-address">{{address}}</view>
+                <view class="goods-price">{{price}}</view>
+            </view>
+      </view>
+</template>

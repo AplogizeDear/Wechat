@@ -1,0 +1,13 @@
+<!--pages/order/order.wxml-->
+<import src="../../template/Merchants/merchants.wxml"/>
+<view class="search-head">
+    <view class="found-head-top">
+      <input type="text" id="found-search" class="am-input-sm" placeholder="搜活动、搜场所、嗖嗖嗖" value=""/>
+      <view class="found-search-mask" onclick="control_disappear()"></view>
+    </view>
+</view>
+<view class="meachant-list">
+    <block  wx:for="{{posterList}}" wx:for-item="item" wx:for-index="idx"> 
+          <template is="merchants" data="{{...item}}" />
+    </block> 
+</view>

@@ -1,0 +1,86 @@
+<!-- 试着用来解决下滑动穿透的问题 -->
+<view class="{{showModalStatus ? 'noscroll' : ''}}" style="top:{{top}}">
+  <!-- 顶部图片 -->
+  <view class="n_sc_top">
+      
+      <image class="blur_img" src='{{post.avatar}}'></image>
+
+      <view class="n_sc_thump">
+          <image src='{{post.avatar}}'></image>
+      </view>
+  </view>
+  <!-- 内容标题 -->
+  <view class="n_sc_sc">
+      <view class="n_sc_sc_all">
+          <view class="n_sc_title">
+            <text>{{post.title}}</text>
+          </view>
+
+          <view class="n_sc_time">
+            <text>{{post.time}}</text>
+          </view>
+
+          <view class="n_sc_address" onclick="window.location.href='/index/found/found_detail.html?id=194'">
+            <text class="sc_you">{{post.address}}</text>
+          </view>
+
+          <view class="n_sc_price">
+            <text>￥{{post.price}}</text>
+          </view>
+      </view>
+    </view>
+  <!-- 活动详情 -->
+    <view class="n_sc_detail">
+      <view class="sc_de">
+          <text class="ac_detail_title">活动详情</text>
+          <view class="sc_de_text">
+            <text>{{post.active_detail}}</text>			
+          </view>
+      </view>
+    </view>
+  <!-- 购买须知 -->
+    <view class="n_sc_detail" style="margin-bottom:180rpx;">
+      <view class="sc_de">
+        <text class="ac_detail_title">购买须知</text>
+        <view class="sc_de_text">
+          <text>1.本场演出门票售出概不退还（因不可抗因素导致演出取消或延期除外）;
+            2.预售票有截止时间，建议你提前购买 ;
+            3.本场演出不设座位，均为站席观演 ;
+            4.为防止不法分子利用票务转让诈骗钱款，GOPAR建议广大乐迷不要进行个人间票务买卖 ;</text>
+        </view>
+      </view>
+    </view>
+</view>
+  <!-- 购票链接 -->
+    <view class="n_go_buy">
+        <view class="n_go_buy_href pay_btn" catchtap="showModal">
+          <view class="buy-ticket-href">立即购票</view>
+        </view>
+    </view>
+
+  <!--屏幕背景变暗的背景  -->
+  <view class="commodity_screen" bindtap="hideModal" catchtouchmove='false'   wx:if="{{showModalStatus}}"></view>
+      <!--弹出框  -->
+      <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+        <view class='pop_all_con'>
+            <view class="the_time" style="padding-bottom:40rpx;">
+                  <view class="n_pay_title">
+                      <text style="font-size: 32rpx;">时间</text>
+                  </view>
+                  <view class="field-select" data-attrval="1525955400">
+                      <text data-aid="1525955400" class="field_1490 field-active">05.10 20:30</text>
+                  </view>
+            </view>
+
+
+            <view class="the_time" style="padding-bottom:40rpx;">
+                  <view class="n_pay_title">
+                      <text style="font-size: 32rpx;">票种</text>
+                  </view>
+                  <view class="field-select" data-attrval="1525955400">
+                      <text data-aid="1525955400" class="field_1490 field-active">05.10 20:30</text>
+                  </view>
+            </view>
+      </view>
+    
+  </view>

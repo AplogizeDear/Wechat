@@ -1,0 +1,27 @@
+.poster-img{
+  width:100%;
+  border-radius: 20rpx;
+  margin-bottom: 0.5rem;
+}
+.poster-img image{
+  width:100%;
+  border-radius: 20rpx;
+  display: block;
+}
+.a_href{
+  width:100%;
+  height:100%;
+  margin-bottom: 30rpx;
+}
+.place-row-title{
+  font-size:36rpx;
+}
+.place-text-row{
+    font-size: 28rpx;
+    margin-top: 20rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #7f8fa6;
+    margin-bottom:30rpx;
+}
