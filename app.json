@@ -10,7 +10,8 @@
     "pages/login/login",
     "pages/register/register",
     "pages/forpas/forpas",
-    "pages/ticdet/ticdet"
+    "pages/ticdet/ticdet",
+    "pages/clilook/clilook"
   ],
   "window":{
     "backgroundTextStyle":"light",

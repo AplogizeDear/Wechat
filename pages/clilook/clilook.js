@@ -1,4 +1,4 @@
-// pages/ticdet/ticdet.js
+// pages/clilook/clilook.js
 Page({
 
   /**
@@ -7,11 +7,7 @@ Page({
   data: {
   
   },
-  clilook:function(){
-    wx.navigateTo({
-      url: '../../pages/clilook/clilook',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

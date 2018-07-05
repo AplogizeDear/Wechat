@@ -1,0 +1,7 @@
+/* pages/clilook/clilook.wxss */
+.ticket-detail-inner{
+    padding-top: 54rpx;
+    padding-bottom: 254rpx;
+    overflow: hidden;
+    background: #ffffff;
+}

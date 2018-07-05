@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -54,6 +54,18 @@
 					"id": -1,
 					"name": "门票页面",
 					"pathName": "pages/ticket/ticket",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "门票详情页面",
+					"pathName": "pages/ticdet/ticdet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "物流详情页面",
+					"pathName": "pages/clilook/clilook",
 					"query": ""
 				}
 			]

@@ -1,1 +1,158 @@
 /* pages/ticdet/ticdet.wxss */
+.t_ticket {
+    width: 654rpx;
+    background: rgba(0,0,0,0.06);
+    box-shadow: 0 0 50rpx 10rpx rgba(0,0,0,0.1);
+    margin: 0 48rpx;
+}
+.tic_detail {
+    /* padding-bottom: 60rpx; */
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+}
+.ucp {
+    height: 40rpx;
+    width: 100%;
+}
+.ucp image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.goods_de{
+    width: 100%;
+    height: 56rpx;
+    margin-top: 12rpx;
+    line-height: 56rpx;
+    margin-bottom: 40rpx;
+}
+.goods_de .g-detail {
+    float: left;
+    color: #7b8292;
+    font-size: 30rpx;
+    font-weight: 700;
+    padding-left: 48rpx;
+}
+.dev_class {
+    width: 180rpx;
+    height: 100%;
+    float: right;
+    margin-right: 32rpx;
+    background: #ed3269;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30rpx;
+    color:#fff;
+}
+.n_goods_num {
+    width: 100%;
+    height: 36rpx;
+    margin-bottom: 56rpx;
+}
+.n_goods_num .n_goods_title {
+    float: left;
+    color: #353b48;
+    padding-left: 48rpx;
+    font-weight: 700;
+}
+.n_goods_num .n_ticket_num {
+    float: right;
+    padding-right: 32rpx;
+    color: #94a1be;
+}
+input.order_number{
+    display: block;
+    float: left; 
+    margin-left: 60rpx;
+    color: #95a2bf;
+    height:100%;
+    font-size: 26rpx;
+    line-height:36rpx;
+    min-height: none;
+}
+.n_ticket_num {
+    float: right;
+    padding-right: 32rpx;
+    color: #94a1be;
+}
+.tic_num{
+  float: right;
+}
+.accept_per {
+    padding: 20rpx;
+    overflow: hidden;
+}
+.acc_ri {
+    float: right;
+    width: 446rpx;
+    height: 100%;
+}
+.acc_top {
+    height: 68rpx;
+    width: 100%;
+    float: right;
+    line-height: 68rpx;
+}
+.tic_price {
+    width: 100%;
+    height: 132rpx;
+    background: #f7f8fa;
+    line-height: 132rpx;
+    overflow: hidden;
+}
+.tic_price_le {
+    float: left;
+    padding-left: 48rpx;
+    font-size: 34rpx;
+    color: #353b48;
+    padding-top: 12rpx;
+}
+.tic_price_ri {
+    float: right;
+    font-size: 40rpx;
+    padding-right: 48rpx;
+    font-weight: bolder;
+    color: #ed3269;
+    padding-top: 12rpx;
+}
+.tic_xian {
+    width: 100%;
+    height: 18rpx;
+}
+.tic_xian image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.n_or_de {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 58rpx;
+    background: #fff;
+}
+.n_or_de_con {
+    margin: 0 46rpx;
+    padding-bottom: 40rpx;
+}
+.n_or_de_con .n_order{
+    font-size: 30rpx;
+    margin-bottom: 34rpx;
+    font-weight: normal;
+    margin: 0 0 40rpx 0;
+}
+.n_or_de_con .n_num {
+    color: #7f8fa6;
+    font-size: 28rpx;
+    margin-bottom:26rpx;
+}
+.dup {
+    height: 40rpx;
+    width: 100%;
+}
+.dup image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

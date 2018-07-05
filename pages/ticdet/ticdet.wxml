@@ -1,2 +1,120 @@
 <!--pages/ticdet/ticdet.wxml-->
-<text>pages/ticdet/ticdet.wxml</text>
+<import src="../../template/productItem/product-item.wxml"/>
+<view class="ticket-detail-inner">
+    <view class="inner">
+      <view class="goods-list-inner">
+               <view class="goods-list-img">
+                <image src="http://go-par.com//uploads/schedule/old_schedule/320.jpg"></image>
+              </view>
+               <view class="goods-list-detail">
+                  <view class="goods-title">
+                    02/03 YELLOW CLAW @宁波 Club SIR.TEEN
+                  </view>
+
+                  <view class="goods-time">
+                      2018-02-03 22:00
+                  </view>
+
+                  <view class="goods-address">
+                      宁波市海曙区和义大道购物中心1036号
+                  </view>
+
+                   <view class="goods-price">
+                      ￥120.00 - ￥180.00
+                  </view>   
+              </view>  
+					</view> 
+		</view>  
+
+    <view class="t_ticket">
+      <view class="ucp">
+          <image src="../../img/ucp.png"></image>
+      </view>
+      <view class="tic_detail">
+
+          <view class="goods_de">
+              <view class="g-detail">物流详情</view>
+                <view class="dev_class">
+                          圆通速递							
+                </view>
+          </view>	
+
+          <view class="n_goods_num">
+						<view class="n_goods_title">订单详情</view>
+						<view class="n_ticket_num">早鸟票 x1</view>
+			    </view>
+
+          <view class="n_goods_num" style="margin-bottom:60rpx;">
+              <view class="n_goods_title">物流编号</view>
+                  <input class="order_number" value="814681561817"/>
+              <view class="n_ticket_num">
+                <view class="tic_num cli_copy" style="color:#888a8f;" data-clipboard-target="#id_text" data-clipboard-action="copy">
+                    复制
+                </view>
+					    </view>
+          </view>
+
+          <view class="n_goods_num" style='margin-bottom:0rpx;'>
+                <view class="n_goods_title">收货信息</view>
+                <view class="n_ticket_num" style="line-height: 34rpx;">
+								 	 <image src="../../img/icon_editor.png" style="width:34rpx;height:34rpx;display: block;float:left;margin-right:6rpx;">
+                   </image>
+								<view class="tic_num" style="color:#888a8f;">修改(剩0次)</view>
+								</view>
+					</view>
+
+          <view class="accept_per">
+						<view class="acc_ri">
+							<view class="acc_top">
+								<view style="color:#94a1be;float:right;">张强 184****3513</view>
+							</view>
+							<view class="acc_bot">
+								<view style="color:#94a1be;float:right;">方式法萨芬撒撒旦飞洒都是撒</view>
+							</view>
+						</view>
+					</view>
+
+          <view class="n_goods_num">
+						<view class="n_goods_title">配送进度</view>
+									<view class="n_ticket_num">
+										  <view class="tic_num" bindtap='clilook' style="color:#94a1be;">点击查看</view>										
+									</view>
+					</view>
+
+          <view class="tic_price">
+              <view class="tic_price_le">实付现金</view>
+              <view class="tic_price_ri">
+                <view style="font-size:40rpx;"> <text style="font-size:32rpx;">￥</text> 120.00</view>
+              </view>
+			    </view>
+
+          <view class="tic_xian">
+				      <image src="../../img/tic_xian.png"></image>
+		    	</view>
+          <view class="tic_xian">
+				    <image src="../../img/tic_xian1.png"></image>
+			    </view>
+
+
+          <view class="n_or_de">
+              <view class='n_or_de_con'>
+                <view class='n_order'>订单详情</view>
+                <view class='n_num'>订单号 : scmaqsat20180122165009</view>
+                <view class='n_num'>购买时间 : 2018-01-22 16:50</view>
+                <view class='n_num'>手机号 : 184****1974</view>
+              </view>
+
+              <view class='n_or_de_con'>
+                <view class='n_order'>订单详情</view>
+                <view class='n_num'>1、如果您购买的门票为电子票，活动当日请至现场凭二维码电子票或六位数取票码，直接核对或换取纸质票入场</view>
+                <view class='n_num'>2、电子二维码/六位取票码一经验证即作废，一人一码请妥善保存</view>
+                <view class='n_num'>手机号 : 184****1974</view>
+              </view>
+			    </view>        
+      </view>
+      <view class="dup">
+			    <image src="../../img/dup.png"></image>
+		  </view>
+    </view>
+</view>
+

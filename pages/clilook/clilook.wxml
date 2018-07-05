@@ -1,0 +1,25 @@
+<!--pages/clilook/clilook.wxml-->
+<view class='ticket-detail-inner'>
+    <view class="schedule_pop">
+        <view class="inner">
+            <view class="goods-list-inner">
+               <view class="goods-list-img">
+                <image src="http://go-par.com//uploads/schedule/old_schedule/320.jpg"></image>
+              </view>
+               <view class="goods-list-detail">
+                  <view class="goods-title" style="color:#ef497a;padding-top: 26rpx;padding-bottom: 72rpx;">
+                    已发货
+                  </view>
+
+                  <view class="goods-address">
+                      圆通速递 : 814681561817
+                  </view>
+
+                   <view class="goods-price" style='color:#787375;font-size:26rpx;'>
+                      官方电话 : 95554
+                  </view>   
+              </view>  
+					</view> 
+        </view>
+    </view>
+</view>
