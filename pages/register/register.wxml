@@ -1,0 +1,61 @@
+<import src="../../template/count-down/count-down.wxml"/>
+<view class='n_login'>
+  <view class="new-login">
+    <image src='../../img/logo.png'></image>
+  </view>
+  <view class="n_login_notice">
+        <view style='margin-bottom:10rpx;'>请输入你的手机号码，</view>
+        <view>登录你的GOPAR账号</view>
+  </view>
+
+  <view class="n_login_phone">
+			<view class="n_login_all">
+				<view class="n_login_p">+ 86
+					  <image src="../../img/icon_xia.png"></image>
+				</view>
+				<input type="tel" style='padding-left:0;'value="{{phone}}"  bindinput="updatePhone" placeholder="请输入手机号码"/>
+			</view>
+	</view>
+
+  <view class="n_verifycode">
+      <view class="n_login_phone" style="width:408rpx;float: left;">
+        <view class="n_login_all">
+          <text class="n_login_p" style="text-align: center;padding-left:14rpx;">验证码</text>
+          <input type="number" value="{{code}}"  bindinput="updateCode"  style="width:230rpx;float: left;" id="identify-code" placeholder="请输入验证码"/>
+        </view>
+      </view>
+      <template is="countDown" data="{{disabled: disabled, plain: plain, text: text}}" />
+  </view>
+
+  <view class="n_login_phone" style="margin-bottom:0;">
+			<view class="n_login_all">
+				<text class="n_login_p">密码</text>
+				<input type="password" style='padding-left:0;' name="password" placeholder="请输入密码"/>
+			</view>
+		</view>
+
+   <view style="overflow:hidden;padding-top:32rpx;margin:50rpx 0;">
+		  <text bindtap='gologin' style="color:#f04c7c;float: right;padding-right:6rpx;">登录</text>
+		  <span style="float: right;padding-right:0.1rem;">已有账号？去 </span>
+	</view>
+
+      <view class="n_login_btn {{tep ? form_btn_color:''}}">
+			    注册
+		  </view>
+  <!-- <view class="login-panel">
+      <view>
+          <input class="input" type="number" value="{{phone}}" placeholder="手机号码" bindinput="updatePhone"/>
+      </view>
+
+
+      <view>
+          <view class="code-box">
+              <input class="input" type="text" value="{{code}}" placeholder="短信验证码" bindinput="updateCode"/>
+              <template is="countDown" data="{{disabled: disabled, plain: plain, text: text}}" />
+          </view>
+      </view>
+
+      <button class="bind-btn" type="primary" hover-class="none" disabled="{{isNotSubmit}}" bindtap="doLogin">登录</button>
+
+  </view> -->
+</view>

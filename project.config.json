@@ -30,13 +30,31 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
-					"name": "自定义",
-					"pathName": "pages/detail/detail",
-					"query": "id=1"
+					"name": "登录页面倒计时",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册页面",
+					"pathName": "pages/register/register",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "忘记密码页面",
+					"pathName": "pages/forpas/forpas",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "门票页面",
+					"pathName": "pages/ticket/ticket",
+					"query": ""
 				}
 			]
 		}

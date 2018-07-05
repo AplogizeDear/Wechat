@@ -26,7 +26,24 @@ Page({
   onLoad: function (options) {
   
   },
-
+  // 跳转门票页面
+  ticket_href:function(){
+    wx.navigateTo({
+      url: '../../pages/ticket/ticket',
+    })
+  },
+  // 跳转至订单页面
+  order_href:function(){
+    wx.navigateTo({
+      url: '../../pages/order/order',
+    })
+  },
+  // 跳转到优惠劵页面
+  coupon_href:function(){
+    wx.navigateTo({
+     url:'../../pages/coupon/coupon',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

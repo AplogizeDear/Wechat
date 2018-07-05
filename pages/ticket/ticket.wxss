@@ -1,0 +1,102 @@
+/* pages/ticket/ticket.wxss */
+.find-ticket-click {
+    color: #000;
+    margin-top: 54rpx;
+}
+.find-ticket-click .find-ticket-con {
+    text-align: center;
+}
+.point_common{
+  color:#ed3269;
+}
+.n_tic_list {
+    width: 690rpx;
+    height: 472rpx;
+    margin-top: 40rpx;
+    margin-left: 32rpx;
+}
+.n_me_tic {
+    margin: 0;
+    padding: 0;
+    width: 690rpx;
+    overflow: hidden;
+    box-shadow: 0 0 0.4rem rgba(0,0,0,0.2);
+    border-radius: 40rpx;
+    margin-bottom:40rpx;
+}
+.n_me_tic .n_me_top {
+    width: 690rpx;
+    height: 96rpx;
+    background: #fff0f0;
+    border-top-left-radius: 40rpx;
+    border-top-right-radius: 40rpx;
+    line-height: 96rpx;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.n_me_bot {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 376rpx;
+    border-bottom-left-radius: 40rpx;
+    border-bottom-right-radius: 40rpx;
+}
+.n_me_bot .me_bot_li {
+    float: left;
+    width: 345rpx;
+    min-height: 188rpx;
+    overflow: hidden;
+    margin-bottom: 0;
+    border-bottom-left-radius: 40rpx;
+    border-bottom-right-radius: 40rpx;
+}
+.time_top {
+    padding-left: 46rpx;
+    padding-top: 58rpx;
+    margin-bottom: 22rpx;
+    color: #696969;
+    font-size: 30rpx;
+}
+.time_bot {
+    padding-left: 46rpx;
+    color: #131313;
+    font-size: 32rpx;
+}
+.city_top {
+    padding-left: 106rpx;
+    padding-top: 58rpx;
+    margin-bottom: 22rpx;
+    color: #696969;
+    font-size: 30rpx;
+}
+.city_bot {
+    padding-left: 106rpx;
+    color: #131313;
+    font-size: 32rpx;
+}
+.n_buy_top {
+    padding-left: 46rpx;
+    padding-top: 28rpx;
+    margin-bottom: 22rpx;
+    color: #696969;
+    font-size: 30rpx;
+}
+.n_buy_bot {
+    padding-left: 46rpx;
+    color: #131313;
+    font-size: 32rpx;
+}
+.n_price_top {
+    padding-top: 28rpx;
+    padding-left: 106rpx;
+    margin-bottom: 22rpx;
+    color: #696969;
+    font-size: 30rpx;
+}
+.n_price_bot {
+    padding-left: 106rpx;
+    font-size: 40rpx;
+    color: #131313;
+}

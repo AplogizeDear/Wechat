@@ -1,0 +1,50 @@
+<view class="find-ticket-click">
+  <view class="find-ticket-con">
+    <text>如何找到门票？立即点击</text>
+    <text class="point_common">关注公众号</text>
+  </view>
+</view>
+
+  <view class="n_tic_list">
+   <block wx:for="{{[1,2,3]}}" wx:key="item">
+      <view class="n_me_tic" bindtap='godetail'> 
+        <view class="n_me_top">
+            02/03 YELLOW CLAW @宁波 Club SIR.TEEN
+        </view>
+         <view class="n_me_bot">
+            <view class="me_bot_li">
+                <view class="time_top">
+								    演出时间
+							  </view>
+                <view class="time_bot">
+								    02 / 03 22:00							
+                </view>
+            </view>
+            <view class="me_bot_li">
+                <view class="city_top">
+                  门票状态
+                </view>
+                <view class="city_bot">
+                  已出票							
+                </view>
+            </view>
+            <view class="me_bot_li">
+                <view class="n_buy_top">
+                  购买数量
+                </view>
+                <view class="n_buy_bot">
+								  早鸟票 1 张
+							  </view>
+            </view>
+            <view class="me_bot_li">
+                <view class="n_price_top">
+                    票价
+                </view>
+                <view class="n_price_bot">
+                   ￥120.00						
+                </view>
+            </view>
+         </view>
+        </view>
+      </block>
+		</view>

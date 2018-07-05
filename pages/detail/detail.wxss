@@ -29,6 +29,43 @@
     height:100%;
     border-radius: 10rpx;
 }
+.tool{
+  height:64rpx;
+  width:650rpx;
+  margin:0 50rpx;
+  margin-top:50rpx;
+  line-height: 64rpx;
+}
+.tool text{
+  margin-right:30rpx;
+  font-size: 28rpx;
+  vertical-align: 3rpx;
+}
+.like{
+  display: inline-block;
+}
+.like image{
+  height:30rpx;
+  width:30rpx;
+  margin-right:10rpx;
+}
+.comment{
+   display: inline-block;
+}
+.comment image{
+  height:30rpx;
+  width:30rpx;
+   margin-right:10rpx;
+}
+.collect{
+   display: inline-block;
+}
+.collect  image{
+  height:30rpx;
+  width:30rpx;
+  margin-right:6rpx;
+}
+
 .n_sc_sc {
     width: 100%;
 }
@@ -88,6 +125,7 @@
     align-items: center;
     justify-content: center;
     z-index: 3;
+    box-shadow:0rpx 10rpx 30rpx 0rpx rgba(0,0,0,0.2);
 }
 .n_go_buy_href {
     width: 654rpx;
@@ -116,7 +154,7 @@
 }
 /*对话框 */
 .commodity_attr_box {
-  height: 874rpx;
+  height: 760rpx;
   width: 100%;
   overflow: hidden;
   position: fixed;
@@ -128,8 +166,9 @@
 }
 .pop_all_con{
    height: auto;
-    width: 100%;
-    padding: 0 50rpx;
+    width: 650rpx;
+    margin-left:50rpx;
+    margin-right:50rpx;
     padding-top: 52rpx;
     padding-bottom: 200rpx;
 }
@@ -137,13 +176,13 @@
   margin-bottom:28rpx;
 }
 .field-select{
+  width:100%;
   overflow: hidden;
 }
-.field-select text {
+.field-select .span_list{
     text-align: center;
-    display: block;
-    float: left;
-    padding: 0 26rpx;
+    display: inline-block;
+    padding: 0 28rpx;
     height: 64rpx;
     line-height: 64rpx;
     border-radius: 60rpx;
@@ -153,11 +192,14 @@
     margin-right: 25rpx;
     margin-bottom: 20rpx;
 }
-
+.active_type{
+  background:#ed3269;
+  color:#fff;
+}
 
 /* 解决滑动穿透问题，然而并没有完全解决 */
 .noscroll{
-   top:0px;
+    top:0px;
     left: 0px;
     width: 100%;
     height: 100%;
@@ -165,3 +207,80 @@
     position: fixed;
     z-index: 0;
 }
+.n_all_select{
+  float: left;
+  color:#ed3367;
+}
+.num_control{
+  float: right;
+}
+.num_control .sc_add {
+    width: 50rpx;
+    height: 50rpx;
+    border: none;
+    background: #FFF;
+    color: #000;
+    border-radius: 50%;
+    float: left;
+}
+.num_control  .input_num{
+    display: block;
+    float: left;
+    order: none;
+    width: 72rpx;
+    height: 50rpx;
+    text-align: center;
+    margin: 0 0.2rem;
+    background: none;
+    line-height: 50rpx;
+    font-weight: 700;
+    font-size: 32rpx;
+    opacity: 1;
+    color: #353b48;
+}
+.num_control .sc_jian {
+    width: 50rpx;
+    height: 50rpx;
+    border: none;
+    background: #FFF;
+    color: #000;
+    border-radius: 50%;
+    float: left;
+}
+
+.stepper {  
+    float: right;
+    width: 160rpx;  
+    height: 48rpx;  
+    /*给主容器设一个边框*/  
+    border: 1px solid #ccc;  
+    border-radius: 6rpx;  
+    margin:0 auto;  
+}  
+/*加号和减号*/  
+.stepper text {  
+    width: 38rpx;  
+    line-height: 48rpx;  
+    text-align: center;  
+    float: left;  
+}  
+/*数值*/  
+.stepper input {  
+    width: 80rpx;  
+    height: 48rpx;  
+    float: left;  
+    margin: 0 auto;  
+    text-align: center;  
+    font-size: 24rpx;  
+    /*给中间的input设置左右边框即可*/  
+    border-left: 1px solid #ccc;  
+    border-right: 1px solid #ccc;  
+}  
+/*普通样式*/  
+.stepper .normal{  
+    color: black;  
+}  
+/*禁用样式*/  
+.stepper .disabled{  
+    color: #ccc;  
+}  

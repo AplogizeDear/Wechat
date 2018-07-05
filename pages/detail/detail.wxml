@@ -1,3 +1,4 @@
+
 <!-- 试着用来解决下滑动穿透的问题 -->
 <view class="{{showModalStatus ? 'noscroll' : ''}}" style="top:{{top}}">
   <!-- 顶部图片 -->
@@ -9,6 +10,8 @@
           <image src='{{post.avatar}}'></image>
       </view>
   </view>
+
+
   <!-- 内容标题 -->
   <view class="n_sc_sc">
       <view class="n_sc_sc_all">
@@ -20,7 +23,7 @@
             <text>{{post.time}}</text>
           </view>
 
-          <view class="n_sc_address" onclick="window.location.href='/index/found/found_detail.html?id=194'">
+          <view class="n_sc_address">
             <text class="sc_you">{{post.address}}</text>
           </view>
 
@@ -61,26 +64,55 @@
   <!--屏幕背景变暗的背景  -->
   <view class="commodity_screen" bindtap="hideModal" catchtouchmove='false'   wx:if="{{showModalStatus}}"></view>
       <!--弹出框  -->
-      <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
         <view class='pop_all_con'>
-            <view class="the_time" style="padding-bottom:40rpx;">
+            <view class="the_time">
                   <view class="n_pay_title">
                       <text style="font-size: 32rpx;">时间</text>
                   </view>
-                  <view class="field-select" data-attrval="1525955400">
-                      <text data-aid="1525955400" class="field_1490 field-active">05.10 20:30</text>
+                  <view class="field-select">
+                     <block  wx:for="{{post.active_time}}" wx:for-item="item" wx:for-index="idx"> 
+                        <text class="span_list {{selectstatus ? active_type : ''}}" catchtap='getid'  data-id="{{item.id}}">{{item.activ_ti}}</text>
+                      </block>
                   </view>
             </view>
 
-
-            <view class="the_time" style="padding-bottom:40rpx;">
+            <view class="the_time">
                   <view class="n_pay_title">
                       <text style="font-size: 32rpx;">票种</text>
                   </view>
                   <view class="field-select" data-attrval="1525955400">
-                      <text data-aid="1525955400" class="field_1490 field-active">05.10 20:30</text>
+                      <block  wx:for="{{ticket_type}}" wx:for-item="item" wx:for-index="idx"> 
+                          <text class="span_list" data-aid="1525955400">{{item}}</text>
+                      </block>
                   </view>
             </view>
-      </view>
+
+            <view class="the_time">
+                  <view class="n_pay_title">
+                      <text style="font-size: 32rpx;">数量</text>
+                  </view>
+                  <view class="field-select" data-attrval="1525955400">
+                      <view class="n_all_select">
+						              <view class="n_ticket_type">￥168</view>
+                      </view>
+
+                     <view class="stepper">  
+                        <!-- 减号 -->  
+                        <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+                        <!-- 数值 -->  
+                        <input type="number" bindchange="bindManual" value="{{num}}" />  
+                        <!-- 加号 -->  
+                        <text class="normal" bindtap="bindPlus">+</text>  
+                    </view>  
+                  </view>
+            </view>
+
+             <view class="n_go_buy">
+                <view class="n_go_buy_href pay_btn" catchtap="">
+                    <view class="buy-ticket-href">立即购票</view>
+             </view>
+    </view>
+    </view>
     
   </view>

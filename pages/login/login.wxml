@@ -1,25 +1,53 @@
 <import src="../../template/count-down/count-down.wxml"/>
-<view class="new-login">
-  <image src='../../img/logo.png'></image>
-</view>
-<view class="n_login_notice">
-			<text>请输入你的手机号码，
-			登录你的GOPAR账号</text>
-</view>
-<view class="login-panel">
-    <view>
-        <view class="title">请输入手机号码</view>
-        <input class="input" type="number" value="{{phone}}" placeholder="手机号码" bindinput="updatePhone"/>
-    </view>
+<view class='n_login'>
+  <view class="new-login">
+    <image src='../../img/logo.png'></image>
+  </view>
+  <view class="n_login_notice">
+        <view style='margin-bottom:10rpx;'>请输入你的手机号码，</view>
+        <view>登录你的GOPAR账号</view>
+  </view>
 
-    <view>
-        <view class="title">请填入获取到的验证码</view>
-        <view class="code-box">
-            <input class="input" type="text" value="{{code}}" placeholder="短信验证码" bindinput="updateCode"/>
-            <template is="countDown" data="{{disabled: disabled, plain: plain, text: text}}" />
-        </view>
-    </view>
+  <view class="n_login_phone">
+			<view class="n_login_all">
+				<view class="n_login_p">+ 86
+					<image src="../../img/icon_xia.png" alt="">
+          </image>
+				</view>
+				<input type="tel" name="username"  bindinput="updatePhone" placeholder="请输入手机号码"/>
+			</view>
+	</view>
 
-    <button class="bind-btn" type="primary" hover-class="none" disabled="{{isNotSubmit}}" bindtap="doLogin">登录</button>
+  <view class="n_login_phone" style="margin-bottom:0;">
+			<view class="n_login_all">
+				<view class="n_login_p">密码</view>
+				<input type="password" name="password" placeholder="请输入密码"/>
+			</view>
+		</view>
 
+    <view style="overflow:hidden;padding-top:32rpx;margin-bottom:50rpx;">
+			  <text style="padding-right: 20rpx;">还没有账号？去</text>
+        <text bindtap='goregister' style="color:#f04c7c;">注册</text>
+			  <text  bindtap='goforpas' style="color:#f04c7c;float: right;padding-right:6rpx;">忘记密码？</text>
+		</view>
+
+      <view class="n_login_btn">
+			    登录
+		  </view>
+  <!-- <view class="login-panel">
+      <view>
+          <input class="input" type="number" value="{{phone}}" placeholder="手机号码" bindinput="updatePhone"/>
+      </view>
+
+
+      <view>
+          <view class="code-box">
+              <input class="input" type="text" value="{{code}}" placeholder="短信验证码" bindinput="updateCode"/>
+              <template is="countDown" data="{{disabled: disabled, plain: plain, text: text}}" />
+          </view>
+      </view>
+
+      <button class="bind-btn" type="primary" hover-class="none" disabled="{{isNotSubmit}}" bindtap="doLogin">登录</button>
+
+  </view> -->
 </view>

@@ -1,63 +1,121 @@
-.user {
-    color: #222;
-    -webkit-tap-highlight-color: transparent;
-}
-.user .header {
-    height: 340rpx;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background: url(../../image/ucenterbg.jpg) no-repeat left top; */
-    background-size: cover;
-}
-.user .user-img{
-    overflow: hidden;
-    margin-bottom: 20rpx;
-    text-align: center;
-}
-.user .user-img  image {
-    width: 90rpx;
-    height: 90rpx;
-    border-radius: 50%;
-}
-.user .user-name {
-    text-align: center;
-    font-size: 30rpx;
-}
-.section {
-    background: #fff;
-    padding: 0 20rpx;
-}
-
-.list .flex-con {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 30rpx 0;
-    border-bottom: 1px solid #e8e8e8;
+.n_per_con{
+    position: relative;
     width: 100%;
 }
-.list .flex-con .icon {
-    font-size: 28rpx;
+.user_n_bg {
+    overflow: hidden;
+    width: 100%;
+    height: 590rpx;
+    margin-bottom: 354rpx;
 }
-.list .flex-con .icon.icon-map{
-    color: #30ba78;
-}
-.list .flex-con .icon.icon-mendianyouhuiquan{
-    color: #e61773;
-}
-.list .flex-con .icon.icon-handshake{
-    color: #4b95fa;
-}
-
-.list .flex-con text {
+.user_n_bg image {
     display: block;
-    flex: 1;
-    margin: 0 20rpx;
+    width: 100%;
+    height: 100%;
+}
+.n_per_con .n_per_introduce {
+    position: absolute;
+    left: 0;
+    top: 408rpx;
+    margin: 0 48rpx;
+    width: 654rpx;
+    height:440rpx;
+    padding-bottom: 60rpx;
+    border-radius: 20rpx;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 10rpx 5rpx rgba(0,0,0,0.3);
+}
+.n_user_img {
+    position: absolute;
+    left: 44rpx;
+    top: -86rpx;
+    width: 208rpx;
+    height: 208rpx;
+    border: 10rpx solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    z-index: 107;
+     background:pink; 
+}
+.n_user_de {
+    position: absolute;
+    right: 0;
+    width: 502rpx;
+    height: 114rpx;
+    padding-top: 20rpx;
+    padding-left: 150rpx;
+    background: transparent;
+    z-index: 101;
+}
+.n_user_name {
     font-size: 28rpx;
+    font-weight: 700;
+    margin-bottom: 14rpx;
+    padding-left:140rpx;
+}
+.n_user_grand{
+  color: #7f8fa6;
+  padding-left:140rpx;
+  font-size: 28rpx;
+}
+.n_per_sign {
+    margin: 186rpx 44rpx 70rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 26rpx;
+}
+.n_per_href {
+    width: 100%;
+    height: 114rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.men_piao, .you_hui_juan {
+    width: 100rpx;
+    height: 100%;
+    text-align: center;
+}
+.men_img, .you_hui_juan_img {
+    text-align: center;
+}
+.men_piao image {
+    width: 80rpx;
+    height: 56rpx;
+    margin-left: 10rpx;
+    margin-bottom: 20rpx;
+}
+.you_hui_juan image {
+    width: 80rpx;
+    height: 56rpx;
+    margin-right: 6rpx;
+    margin-bottom: 15rpx;
+}
+.user_info {
+    padding: 0;
+    margin: 0;
+    padding-left:44rpx;
+    padding-right:44rpx;
+}
+.info-list{
+  overflow: hidden;
+  margin-bottom:30rpx;
+  padding-top:20rpx;
+  padding-bottom: 20rpx;
+}
+.pertitle{
+  float: left;
+  font-size:28rpx;
 }
 .icon-youjiantou{
-  margin-left:4rpx;
+  float: right;
+  font-size:28rpx;
+}
+.phone{
+  float: right;
+  font-size: 28rpx;
 }
 @import "../../iconcss/iconcss.wxss";

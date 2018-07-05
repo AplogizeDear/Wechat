@@ -3,16 +3,9 @@ page {
   display: block;
   min-height: 100%;
   background-color: #fff;
+  font-size:26rpx;
+  float:left;
 }
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  background-color: #eee;
-} 
 .slider {
     display: block;
     height: 400rpx;
@@ -34,36 +27,95 @@ page {
     display: table!important;
     clear: both;
 }
-/*布局相关*/
-.pt20{
-    height: 20rpx;
-    background-color: #eee;
+/* 登录页面公共样式 */
+/* pages/login/login.wxss */
+.n_login{
+  width: 640rpx;
+  overflow: hidden;
+  margin: 80rpx 54rpx;
 }
-/*警示状态栏*/
-.status-bar{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.n_login .new-login {
+  height: 86rpx;
+  margin-bottom: 54rpx;
+}
+.new-login image{
+  width:322rpx;
+  height:86rpx;
+}
+.n_login_notice{
+  overflow: hidden;
+  margin-bottom: 70rpx;
+  font-size: 30rpx;
+}
+.n_login_notice text{
+  font-size: 30rpx;
+}
+.n_login_phone{
+  width: 100%;
+  height: 88rpx;
+  margin-bottom: 28rpx;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+n_login_all {
+    width: 100%;
+    height: 50rpx;
+}
+.n_login_p {
+    display: block;
+    float: left;
+    width: 130rpx;
+    line-height: 50rpx;
+    padding-left: 30rpx;
+}
+.n_login_all input {
+    border: none;
+    height: 100%;
+    width: 460rpx;
+    padding-left: 20rpx;
+    float: right;
+    background: #f5f5f5;
+}
+.n_login_btn{
+     width: 100%;
+    height: 90rpx;
+    background: #dad9e2;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90rpx;
-    border-top: solid #efe5a7 3rpx;
-    background-color: #fffae2;
     font-size: 30rpx;
-    color: #222;
+    color: #fff;
 }
-.status-bar text{
-    padding: 0 3px;
-    color: #ff6700;
+.n_login_p image{
+  width:34rpx;
+  height:24rpx;
+  margin-top:8rpx;
 }
-/*按钮primary*/
-button[type="primary"] {
-    border-radius: 0;
-    background-color: #ff6700;
+/* 注册页面相关 */
+.n_verifycode {
+    width: 100%;
+    overflow: hidden;
 }
-button[disabled][type="primary"] {
-    border-radius: 0;
-    background-color:#ccc;
+.get-identify-code {
+    float: right;
+    height: 90rpx;
+    width: 200rpx;
+    background: #ed3269;
+    color: #fff;
+    font-size: 26rpx;
+    padding-top:8rpx;
+}
+.form_btn_color {
+    background: -webkit-linear-gradient(30deg, #ed3367, #f05e3f);
+}
+button[type=primary] {
+    background:#ed3367;
+}
+button[disabled][type=primary] {
+    background:gray;
+}
+.n_login_phone button.get-identify-code.button-hover{
+  background-color:none;
 }

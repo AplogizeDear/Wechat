@@ -11,22 +11,26 @@ Page({
     isNotSubmit: true
   },
   updatePhone: function (e) {
+    console.log(e.detail.value);
     this.setData({
+      // 获取input的值
       phone: e.detail.value
     });
   },
   updateCode: function (e) {
     this.setData({
+      //获取验证码的值
       code: e.detail.value
     });
   },
+  // 验证电话号码方法
   checkPhone: function (phone) {
     if (!/^1[34578]\d{9}$/.test(phone) || phone === '') {
       return false;
     }
     return true;
   },
- 
+//  验证验证码
   checkCode: function (code) {
     var testco = /[0-9]{6}$/;
     if (!testco.test(code)) {
@@ -37,7 +41,7 @@ Page({
   _getCode: function () {
     if (!this.checkPhone(this.data.phone)) {
       return wx.showToast({
-        title: '手机号格式不正确或为空',
+        title: '正确的手机号？',
         image: '../../img/wrong.png',
         duration: 1000
       });
@@ -130,7 +134,16 @@ Page({
     //   });
     // })
   },
-
+  goregister:function(){
+    wx.navigateTo({
+      url: '../../pages/register/register',
+    })
+  },
+  goforpas:function(){
+    wx.navigateTo({
+      url: '../../pages/forpas/forpas',
+    })
+  },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
     //初始化倒计时组件

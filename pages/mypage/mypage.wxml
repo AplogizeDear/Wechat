@@ -1,34 +1,71 @@
-<view class="user">
-    <view class="header">
-        <view class="login-wrap" bindtap="goDetail">
-            <view class="user-img">
-                <image src="{{userImg}}" wx:if="{{userImg}}"></image>
-                <image src="../../img/defaultuser.png" wx:else></image>
-            </view>
-            <view class="user-name">{{userName || '去登录'}}<span class="icon icon-youjiantou"></span></view>
-        </view>
+<view class="n_per_con">
+    <view class="user_n_bg">
+        <image src="https://go-par.com/static/index/img/n_de_bg.png"></image>
     </view>
-    <view class="list section">
-        <navigator url="{{isLogin ? '../address/address' : '../login/login'}}" >
-            <view class="flex-con">
-                <span class="icon icon-map"></span>
-                <text>配送地址管理</text>
-                <span class="icon icon-youjiantou"></span>
-            </view>
-        </navigator>
-        <navigator url="{{isLogin ? '../coupon-list/coupon-list' : '../login/login'}}">
-            <view class="flex-con">
-                <span class="icon icon-mendianyouhuiquan"></span>
-                <text>门店优惠券</text>
-                <span class="icon icon-youjiantou"></span>
-            </view>
-        </navigator>
 
-        <view class="flex-con">
-            <span class="icon icon-handshake"></span>
-            <text>招商加盟</text>
-            <span class="icon icon-youjiantou"></span>
+    <view class="n_per_introduce">
+      <view class="n_user_img">
+                            
+      </view>
+          
+      <view class="n_user_de">
+          <view class="n_user_name">张强</view>
+          <view class="n_user_grand">普通会员</view>
+      </view>
+      
+      <view class="n_per_sign">
+          未填写个人简介
+      </view>
+
+      <view class="n_per_href">
+        <view class="men_piao" bindtap='ticket_href'>
+            <view class="men_img">
+                <image src="../../img/icon_menpiao.png" alt=""></image>
+            </view>
+            <view style="font-size: 30rpx;color:#000;">门票</view>
         </view>
 
-    </view>
+        <view class="men_piao">
+            <view class="men_img" bindtap='order_href'>
+                <image src="../../img/icon_order.png" alt=""></image>
+            </view>
+            <view style="font-size: 30rpx;color:#000;">订单</view>
+        </view>
+
+        <view class="you_hui_juan">
+            <view class="you_hui_juan_img" bindtap='coupon_href'>
+                <image src="../../img/icon_coupon.png" alt=""></image>
+            </view>
+            <view style="font-size: 30rpx;color:#000;">优惠劵</view>
+        </view>
+    </view> 
+  </view>
+
+  <view class="user_info">
+       <view class='info-list'>
+          <text class='pertitle'>个人资料</text>
+          <view class='icon-youjiantou'></view>
+      </view>
+
+      <view class='info-list'>
+          <text class='pertitle'>我的地址</text>
+          <view class='icon-youjiantou'></view>
+      </view>
+
+      <view class='info-list'>
+          <text class='pertitle'>客服电话</text>
+          <view class='phone'>0571-56606065</view>
+      </view>
+
+      <view class='info-list'>
+          <text class='pertitle'>问题反馈</text>
+          <view class='icon-youjiantou'></view>
+      </view>
+
+      <view class='info-list'>
+          <text class='pertitle'>退出登录</text>
+          <view class='icon-youjiantou'></view>
+      </view>
+  </view>
 </view>
+

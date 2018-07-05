@@ -3,37 +3,41 @@
     "pages/home/home",
     "pages/found/found",
     "pages/mypage/mypage",
+    "pages/detail/detail",
+    "pages/ticket/ticket",
+    "pages/order/order",
+    "pages/coupon/coupon",
     "pages/login/login",
-    "pages/detail/detail"
+    "pages/register/register",
+    "pages/forpas/forpas",
+    "pages/ticdet/ticdet"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#ff6700",
-    "navigationBarTitleText": "Hello World",
-    "navigationBarTextStyle":"white"
+    "navigationBarBackgroundColor": "#ff6700"
   },
   "tabBar":{
     "color": "#000000",
-    "selectedColor": "#ff3200",
+    "selectedColor": "#ed3269",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "img/home.png",
-        "selectedIconPath": "img/home1.png"
+        "iconPath": "img/icon_first.png",
+        "selectedIconPath": "img/icon_first1.png"
       },
       {
         "pagePath": "pages/found/found",
         "text": "发现",
-        "iconPath": "img/found.png",
-        "selectedIconPath": "img/found1.png"
+        "iconPath": "img/icon_found.png",
+        "selectedIconPath": "img/icon_found1.png"
       },
       {
         "pagePath": "pages/mypage/mypage",
         "text": "我的",
-        "iconPath": "img/mypage.png",
-        "selectedIconPath": "img/mypage1.png"
+        "iconPath": "img/icon_me.png",
+        "selectedIconPath": "img/icon_me1.png"
       }
     ]
   },

@@ -56,6 +56,4 @@ module.exports = {
   couponList: wdomain + '/coupon/list',
   couponDetailPage: mdomain + '/h5/couponexplain',
   couponDetail: wdomain + '/coupon/detail',
-
-
 }

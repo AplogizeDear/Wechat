@@ -41,3 +41,4 @@ module.exports = {
   formatTime: formatTime,
   wxPromisify: wxPromisify
 }
+export {}
